@@ -1,0 +1,143 @@
+/* General styles */
+body {
+  background-color: #c5a6a6;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container */
+.app-container {
+  background: white;
+  width: 500px;  /* Increased width */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Titles */
+.title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #666;
+}
+
+.count {
+  font-weight: bold;
+  color: #ff5733;
+}
+
+/* Input field and button */
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  justify-content: center;
+}
+
+.input-field {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Buttons */
+.add-btn,
+.refresh-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 10px;  
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.add-btn:hover {
+  background-color: #218838;
+}
+
+.refresh-btn {
+  background-color: #007bff;
+}
+
+.refresh-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Error message */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Refresh message */
+.refresh-message {
+  color: green;
+  font-size: 14px;
+  margin-top: 10px;
+  animation: fadeOut 3s forwards;
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* Project list */
+.project-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.project-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  transition: transform 0.2s;
+}
+
+.project-item:hover {
+  transform: scale(1.03);
+}
+
+.project-name {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Delete button */
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
