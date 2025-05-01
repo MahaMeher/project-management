@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 
-const API_URL = "http://localhost:5000"; // Backend URL
+const API_URL = "https://backend-production-155f.up.railway.app"; // Backend URL
 
 function App() {
     const [projects, setProjects] = useState([]);
