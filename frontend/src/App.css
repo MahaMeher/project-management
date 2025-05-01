@@ -13,7 +13,8 @@ body {
 /* Container */
 .app-container {
   background: white;
-  width: 500px;  /* Increased width */
+  width: 95%;
+  max-width: 500px;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -140,4 +141,31 @@ body {
 
 .delete-btn:hover {
   background-color: #c82333;
+}
+
+@media (max-width: 400px) {
+  .input-container {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .input-field {
+    flex: 1 1 100%;
+  }
+
+  .add-btn,
+  .refresh-btn {
+    flex: 1 1 auto;
+    font-size: 13px;
+    padding: 7px 10px;
+  }
+
+  .project-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .delete-btn {
+    align-self: flex-end;
+  }
 }
